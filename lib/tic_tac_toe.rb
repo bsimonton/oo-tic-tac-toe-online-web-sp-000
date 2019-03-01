@@ -28,8 +28,8 @@
     user_input.to_i - 1
   end
 
-   def move(location, character = "X")
-    @board[location.to_i - 1] = character
+    def move(position, player)
+    @board[position] = player
   end
 
    def position_taken?(position)
